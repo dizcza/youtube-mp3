@@ -1,22 +1,19 @@
-## Usage
+Usage
+
+`./download_mp3 <youtube_url>`
+
+Example
 
 ```
-pip install youtube_dl
-python youtube-mp3.py <youtube-url>
-```
-
-## Example
-
-```
-python youtube-mp3.py https://www.youtube.com/watch?v=FQC1g5joc60
+./download_mp3 https://www.youtube.com/watch?v=7fD5hz8bHtU
 ```
 
 Output:
 
 ```
-[download] Destination: The Art of Learning Full - Audio Book-FQC1g5joc60.m4a
-[download] 100% of 46.85MiB in 00:20
-[ffmpeg] Destination: The Art of Learning Full - Audio Book-FQC1g5joc60.mp3
-Deleting original file The Art of Learning Full - Audio Book-FQC1g5joc60.m4a (pass -k to keep)
+[download] Destination: ~/Downloads/Nadishana_Manu_Delago_Loup_Barrow_Thomas_Bloch_hang_crystal_organ_LOCUS_SOLUS_Orchestra.webm
+[download] 100% of 10.51MiB in 00:0079MiB/s ETA 00:004
+[ffmpeg] Destination: ~/Downloads/Nadishana_Manu_Delago_Loup_Barrow_Thomas_Bloch_hang_crystal_organ_LOCUS_SOLUS_Orchestra.mp3
 ```
 
+Check-out your `~/Downloads` folder.

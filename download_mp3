@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Usage: ./download_mp3 <youtube_url>
+docker run --rm -v $HOME/Downloads:/root/Downloads -i dizcza/youtube-mp3 python youtube-mp3.py $1

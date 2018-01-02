@@ -7,6 +7,7 @@ parser.add_argument("url", help="youtube video url")
 args = parser.parse_args()
 
 ydl_opts = {
+    'outtmpl': "~/Downloads/%(title)s.%(ext)s",
     'format': 'bestaudio/best',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
@@ -16,4 +17,3 @@ ydl_opts = {
 }
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
     ydl.download(args.url.split())
-
