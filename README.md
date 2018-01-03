@@ -2,8 +2,8 @@ You _don't_ need to download this repo to use **youtube-mp3** downloader!
 
 Prerequisite steps:
 
-1. Install docker.
-2. Append to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS):
+1. [Install docker](https://gist.github.com/dizcza/264e3a793d81d23439c1a709eb46f11e).
+2. Append the following line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS):
 
 `alias youtube-mp3="docker run --rm -v $HOME/Downloads:/root/Downloads dizcza/youtube-mp3 $1"`
 
