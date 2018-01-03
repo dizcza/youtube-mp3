@@ -1,12 +1,21 @@
+You _don't_ need to download this repo to use **youtube-mp3** downloader!
+
+Prerequisite steps:
+
+1. Install docker.
+2. Append to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS):
+
+`alias youtube-mp3="docker run --rm -v $HOME/Downloads:/root/Downloads dizcza/youtube-mp3 $1"`
+
+3. `source ~/.bashrc` to save the new alias.
+
 Usage
 
-`./download_mp3 <youtube_url>`
+`youtube-mp3 <youtube_url>`
 
 Example
 
-```
-./download_mp3 https://www.youtube.com/watch?v=7fD5hz8bHtU
-```
+`youtube-mp3 https://www.youtube.com/watch?v=7fD5hz8bHtU`
 
 Output:
 
