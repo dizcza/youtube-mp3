@@ -12,7 +12,7 @@ ydl_opts = {
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
         'preferredcodec': 'mp3',
-        'preferredquality': '192',
+        'preferredquality': '320',
     }],
 }
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
